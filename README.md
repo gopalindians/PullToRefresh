@@ -36,7 +36,7 @@ The detailed steps to install Flutter on your personal computer & getting starte
 ### Component Syntax
 
 The basic format of PullToRefresh gesture looks like the one below:
-
+```dart 
     const RefreshIndicator({
           Key key,
           @required Widget child,
@@ -44,16 +44,16 @@ The basic format of PullToRefresh gesture looks like the one below:
           @required RefreshCallback onRefresh,
           Color color,
           Color backgroundColor,
-          ScrollNotificationPredicate
+          ScrollNo``tificationPredicate
               notificationPredicate: defaultScrollNotificationPredicate,
           String semanticsLabel,
           String semanticsValue
     })
-
+```
 ### Implementation
 
 The most generic way to implement PullToRefresh is as follows:
-
+```dart 
     const RefreshIndicator({
       Key key,
       @required this.child,
@@ -68,14 +68,14 @@ The most generic way to implement PullToRefresh is as follows:
          assert(onRefresh != null),
          assert(notificationPredicate != null),
          super(key: key);
-
+```
 ### Importing dart libraries to main.dart file
 
 Import **dart:async** & **dart:math **libraries to your main.dart file by adding the following line at the starting of the file:
-
+```dart 
     import 'dart:async';
     import 'dart:math';
-
+```
 ### Putting Code in action
 
 Amend your main.dart file as per the following code:
